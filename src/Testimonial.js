@@ -2,13 +2,13 @@ import React from 'react';
 
 const Testimonial = ({ image, name, content }) => {
   return (
-    <div>
-			<img src={ image } alt="photo" />
+    <>
+			<img src={ image } alt="profile-picture" />
 			<div>
 				<h3>{ name }</h3>
 				<p>{ content }</p>
 			</div>
-		</div>
+		</>
   );
 };
 
