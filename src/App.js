@@ -1,18 +1,15 @@
 import './App.css';
 import Header from './Header';
-
-const navItems = [
-	{id: 1, title: 'Pricing'},
-	{id: 2, title: 'Product'},
-	{id: 3, title: 'About Us'},
-	{id: 4, title: 'Careers'},
-	{id: 5, title: 'Community'}
-];
+import {navContent, featuresContent, testimonialContent} from './content';
+import FeatureList from './FeatureList';
+import TestimonialList from './TestimonialList';
 
 function App() {
   return (
     <div className="App">
-      <Header navItems={ navItems } />
+      <Header navItems={ navContent } />
+      <FeatureList featureItems={ featuresContent } />
+      <TestimonialList testimonialItems={ testimonialContent } />
     </div>
   );
 }
