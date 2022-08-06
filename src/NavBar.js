@@ -1,25 +1,16 @@
 import React from 'react';
+import UList from './UList';
 
 const NavBar = (props) => {
   return (
     <nav className={ props.className ? props.className : undefined } >
-			<ul
-				className={ props.ulClassName ? props.ulClassName : 'nav-list' }
-				role={ props.ulRole ? props.ulRole : 'list'}
-				aria-label={ props.ulAreaLabel ? props.ulAreaLabel : 'nav-list' }
+			<UList
+				className=''
+				role=''
+				aria-label=''
 			>
-				{props.navOptions.map(item => (
-					<li
-						key={ item.id }
-					>
-						<a
-							href="#"
-						>
-							{ item.title }
-						</a>
-					</li>
-				))}
-			</ul>
+				{ props.children }
+			</UList>
 		</nav>
   );
 };

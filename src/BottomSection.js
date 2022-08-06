@@ -3,14 +3,20 @@ import Button from './Button';
 
 const BottomSection = () => {
   return (
-    <section>
+    <section className='cta bg-primary-400 text-neutral-100'>
 			<div className="container">
-				<div>
+				<div className='even-columns'>
 					<div>
-						<p>Simplify how your team works today.</p>
+						<p className='fs-secondary-heading fw-bold'>
+							Simplify how your team works today.
+						</p>
 					</div>
 					<div>
-						<Button	text='Get Started' />
+						<Button
+							text='Get Started'
+							className={'button inverted'}
+							dataType='inverted'
+						/>
 					</div>
 				</div>
 			</div>

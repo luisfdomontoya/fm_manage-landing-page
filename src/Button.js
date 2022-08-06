@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Button = ({ text }) => {
+const Button = (props) => {
   return (
-    <button>
-			{ text }
+    <button
+      className={ props.className }
+      data-type={ props.dataType ? props.dataType : '' }
+    >
+			{ props.text }
 		</button>
   );
 };

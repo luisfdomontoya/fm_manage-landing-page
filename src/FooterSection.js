@@ -1,15 +1,38 @@
 import React from 'react';
-import SocialNetworks from './SocialNetworks';
+import { socialContent } from './content';
+import UList from './UList';
 
 const FooterSection = () => {
   return (
-    <footer>
-			<div>
-				<div>
-					<SocialNetworks className='social' />
+    <footer className='bg-neutral-900 text-neutral-100'>
+			<div className='container'>
+				<div
+					className='even-columns'
+					style={{backgroundColor: 'black'}}
+				>
+					<a href="#"><img src={ require('./images/logo.svg').default } alt='Manage logo' /></a>
+					<UList
+						className=''
+						role=''
+						aria-label='social list'
+					>
+						{
+							socialContent.map(item => (
+								<li key={ item.id } >
+									<a
+										href={ item.url }
+										aria-label={ item.name }
+									>
+										<img
+											src={ item.icon }
+											alt={ item.name }
+										/>
+									</a>
+								</li>
+							))
+						}
+					</UList>
 				</div>
-				<div></div>
-				<div></div>
 			</div>
 		</footer>
   );
