@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 import { socialContent, navContent } from './content';
 import UList from './UList';
 
@@ -31,23 +32,33 @@ const FooterSection = () => {
 					</UList>
 				</div>
 				<div>
-				<nav className='footer-nav'>
-          <UList
-						className=''
-						role='list'
-						aria-label=''
-					>
-						{
-							navContent.map(item => (
-								<li key={ item.id } >
-									<a href={ item.url } >
-                    { item.title }
-									</a>
-								</li>
-							))
-						}
-					</UList>
-        </nav>
+					<nav className='footer-nav'>
+						<UList
+							className=''
+							role='list'
+							aria-label='footer'
+						>
+							{
+								navContent.map(item => (
+									<li key={ item.id } >
+										<a href={ item.url } >
+											{ item.title }
+										</a>
+									</li>
+								))
+							}
+						</UList>
+					</nav>
+				</div>
+				<div>
+					<form>
+						<input type="email" />
+						<Button
+							className='button'
+							text='Go'
+						/>
+					</form>
+					<p>Copyright 2022. All rights reserved</p>
 				</div>
 			</div>
 		</footer>

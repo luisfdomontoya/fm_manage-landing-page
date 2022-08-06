@@ -25,7 +25,10 @@ const Header = () => {
 						}
 					</UList>
         </nav>
-				<Button text='Get Started'/>
+				<Button
+          className='button'
+          text='Get Started'
+        />
 			</div>
     </header>
   );
