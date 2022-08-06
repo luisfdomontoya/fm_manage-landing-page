@@ -1,11 +1,11 @@
 import React from 'react';
 import Testimonial from './Testimonial';
 
-const testimonialList = ({ testimonialItems }) => {
+const testimonialList = ({ testimonialContent }) => {
   return (
 		<div>
 			<ul>
-				{testimonialItems.map(item => (
+				{testimonialContent.map(item => (
 					<li key={ item.id }>
 						<Testimonial
 							image={ item.image }

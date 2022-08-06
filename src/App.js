@@ -1,15 +1,16 @@
 import './App.css';
 import Header from './Header';
-import {navContent, featuresContent, testimonialContent} from './content';
-import FeatureList from './FeatureList';
-import TestimonialList from './TestimonialList';
+import TestimonialSection from './TestimonialSection';
+import HeroSection from './HeroSection';
+import MiddleSection from './MiddleSection';
 
 function App() {
   return (
     <div className="App">
-      <Header navItems={ navContent } />
-      <FeatureList featureItems={ featuresContent } />
-      <TestimonialList testimonialItems={ testimonialContent } />
+      <Header />
+      <HeroSection />
+      <MiddleSection />
+      <TestimonialSection />
     </div>
   );
 }
