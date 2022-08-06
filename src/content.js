@@ -1,9 +1,57 @@
 const navContent = [
-	{id: 1, title: 'Pricing'},
-	{id: 2, title: 'Product'},
-	{id: 3, title: 'About Us'},
-	{id: 4, title: 'Careers'},
-	{id: 5, title: 'Community'}
+	{
+    id: 1,
+    title: 'Pricing'
+  },
+	{
+    id: 2,
+    title: 'Product'
+  },
+	{
+    id: 3,
+    title: 'About Us'
+  },
+	{
+    id: 4,
+    title: 'Careers'
+  },
+	{
+    id: 5,
+    title: 'Community'
+  }
+];
+
+const socialContent = [
+	{
+    id: 1,
+    name: 'facebook',
+    url: 'https://www.facebook.com/',
+    icon: require('./images/icon-facebook.svg').default
+  },
+	{
+    id: 2,
+    name: 'youtube',
+    url: 'https://www.youtube.com/',
+    icon: require('./images/icon-youtube.svg').default
+  },
+	{
+    id: 3,
+    name: 'twitter',
+    url: 'https://twitter.com/',
+    icon: require('./images/icon-twitter.svg').default
+  },
+	{
+    id: 4,
+    name: 'pinterest',
+    url: 'https://pinterest.com/',
+    icon: require('./images/icon-pinterest.svg').default
+  },
+	{
+    id: 5,
+    name: 'instagram',
+    url: 'https://www.instagram.com/',
+    icon: require('./images/iconInstagram.svg').default
+  }
 ];
 
 const featuresContent = [
@@ -51,4 +99,4 @@ const testimonialContent = [
   }
 ];
 
-export {navContent, featuresContent, testimonialContent};
+export {navContent, featuresContent, testimonialContent, socialContent};

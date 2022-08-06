@@ -7,7 +7,7 @@ const TestimonialSection = () => {
   return (
     <section>
 			<div className="container">
-				<h1>What they've said</h1>
+				<h2>What they've said</h2>
 				<TestimonialList testimonialContent={ testimonialContent } />
 				<Button text='Get Started' />
 			</div>
