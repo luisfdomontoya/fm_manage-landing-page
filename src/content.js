@@ -1,23 +1,38 @@
 const navContent = [
 	{
     id: 1,
-    title: 'Pricing'
+    title: 'Pricing',
+    type: 'header'
   },
 	{
     id: 2,
-    title: 'Product'
+    title: 'Product',
+    type: 'header'
   },
 	{
     id: 3,
-    title: 'About Us'
+    title: 'About Us',
+    type: 'header'
   },
 	{
     id: 4,
-    title: 'Careers'
+    title: 'Careers',
+    type: 'header'
   },
 	{
     id: 5,
-    title: 'Community'
+    title: 'Community',
+    type: 'header'
+  },
+  {
+    id: 6,
+    title: 'Home',
+    type: 'footer'
+  },
+  {
+    id: 7,
+    title: 'Privacy Policy',
+    type: 'footer'
   }
 ];
 

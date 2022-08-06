@@ -1,9 +1,7 @@
-import React from 'react';
-// import FeatureList from './FeatureList';
-// import NavBar from './NavBar';
-import UList from './UList';
 import Feature from './Feature';
 import { featuresContent } from './content';
+import React from 'react';
+import UList from './UList';
 
 const MiddleSection = () => {
   return (
