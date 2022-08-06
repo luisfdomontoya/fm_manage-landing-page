@@ -21,6 +21,39 @@ const navContent = [
   }
 ];
 
+// const socialContent = [
+// 	{
+//     id: 1,
+//     name: 'facebook',
+//     url: 'https://www.facebook.com/',
+//     icon: './images/icon-facebook.svg'
+//   },
+// 	{
+//     id: 2,
+//     name: 'youtube',
+//     url: 'https://www.youtube.com/',
+//     icon: './images/icon-youtube.svg'
+//   },
+// 	{
+//     id: 3,
+//     name: 'twitter',
+//     url: 'https://twitter.com/',
+//     icon: './images/icon-twitter.svg'
+//   },
+// 	{
+//     id: 4,
+//     name: 'pinterest',
+//     url: 'https://pinterest.com/',
+//     icon: './images/icon-pinterest.svg'
+//   },
+// 	{
+//     id: 5,
+//     name: 'instagram',
+//     url: 'https://www.instagram.com/',
+//     icon: './images/iconInstagram.svg'
+//   }
+// ];
+
 const socialContent = [
 	{
     id: 1,

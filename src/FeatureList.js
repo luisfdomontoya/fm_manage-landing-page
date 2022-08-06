@@ -1,12 +1,18 @@
 import React from 'react';
 import Feature from './Feature';
 
-const FeatureList = ({ featureItems }) => {
+const FeatureList = (props) => {
   return (
 		<div>
-			<ul>
-				{featureItems.map(item => (
-					<li key={ item.id }>
+			<ul
+				className={ props.className ? props.className : undefined }
+				role={ props.role ? props.role : 'list'}
+				aria-label={ props.areaLabel ? props.areaLabel : 'features' }
+			>
+				{props.featureItems.map(item => (
+					<li
+						key={ item.id }
+					>
 						<Feature
 							id={ item.id }
 							title={ item.title }

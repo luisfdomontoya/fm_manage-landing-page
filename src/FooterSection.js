@@ -6,7 +6,7 @@ const FooterSection = () => {
     <footer>
 			<div>
 				<div>
-					<SocialNetworks />
+					<SocialNetworks className='social' />
 				</div>
 				<div></div>
 				<div></div>
