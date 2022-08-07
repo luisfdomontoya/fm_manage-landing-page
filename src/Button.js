@@ -6,7 +6,7 @@ const Button = (props) => {
       className={ props.className }
       data-type={ props.dataType ? props.dataType : '' }
     >
-			{ props.text }
+			{ props.children }
 		</button>
   );
 };

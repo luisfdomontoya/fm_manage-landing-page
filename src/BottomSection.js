@@ -3,8 +3,8 @@ import Button from './Button';
 
 const BottomSection = () => {
   return (
-    <section className='cta bg-primary-400 text-neutral-100'>
-			<div className="container">
+    <section className='cta bg-accent-400 text-neutral-100' style={{border: '1px solid blue'}}>
+			<div className='container'>
 				<div className='even-columns'>
 					<div>
 						<p className='fs-secondary-heading fw-bold'>
@@ -13,10 +13,11 @@ const BottomSection = () => {
 					</div>
 					<div>
 						<Button
-							text='Get Started'
 							className={'button inverted'}
 							dataType='inverted'
-						/>
+						>
+							Get Started
+						</Button>
 					</div>
 				</div>
 			</div>

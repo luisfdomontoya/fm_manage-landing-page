@@ -1,4 +1,5 @@
 import './App.css';
+
 import Header from './Header';
 import TestimonialSection from './TestimonialSection';
 import HeroSection from './HeroSection';
@@ -8,14 +9,16 @@ import BottomSection from './BottomSection';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
-      <HeroSection />
-      <MiddleSection />
-      <TestimonialSection />
+      <main>
+        <HeroSection />
+        <MiddleSection />
+        <TestimonialSection />
+      </main>
       <BottomSection />
       <FooterSection />
-    </div>
+    </>
   );
 }
 

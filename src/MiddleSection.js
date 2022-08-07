@@ -17,8 +17,8 @@ const MiddleSection = () => {
 					<div>
 						<UList
 							className='numbered-items'
-							role=''
-							aria-label=''
+							role='list'
+							aria-label='list'
 						>
 							{
 								(featuresContent).map(item => (

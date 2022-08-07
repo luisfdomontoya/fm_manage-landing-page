@@ -5,7 +5,7 @@ import UList from './UList';
 
 const FooterSection = () => {
   return (
-    <footer className='bg-neutral-900 text-neutral-100'>
+    <footer className='bg-neutral-900 text-neutral-100' style={{border: '1px solid blue'}}>
 			<div className='container'>
 				<div className='even-columns' style={{backgroundColor: 'black'}}>
 					<a href="#"><img src={ require('./images/logo.svg').default } alt='Manage logo' /></a>
@@ -53,10 +53,7 @@ const FooterSection = () => {
 				<div>
 					<form>
 						<input type="email" />
-						<Button
-							className='button'
-							text='Go'
-						/>
+						<Button className='button'>Go</Button>
 					</form>
 					<p>Copyright 2022. All rights reserved</p>
 				</div>

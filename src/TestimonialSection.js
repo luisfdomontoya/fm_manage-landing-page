@@ -27,7 +27,7 @@ const TestimonialSection = () => {
 					}
 				</UList>
 			</div>
-			<Button className='button' text='Get Started' />
+			<Button className='button'>Get Started</Button>
     </section>
   );
 };

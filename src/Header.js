@@ -1,3 +1,5 @@
+// import './App.css';
+
 import React from 'react';
 import { navContent } from './content';
 import Button from './Button';
@@ -25,10 +27,7 @@ const Header = () => {
 						}
 					</UList>
         </nav>
-				<Button
-          className='button'
-          text='Get Started'
-        />
+				<Button className='button'>Get Started</Button>
 			</div>
     </header>
   );
