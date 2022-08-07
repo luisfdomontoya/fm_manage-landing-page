@@ -5,7 +5,7 @@ import Button from './Button';
 
 const HeroSection = () => {
   return (
-    <section className='bg-accent-400'>
+    <section className='padding-block-900'>
 			<div className="container">
 				<div className="even-columns">
 					<div>

@@ -3,7 +3,7 @@ import Button from './Button';
 
 const BottomSection = () => {
   return (
-    <section className='cta bg-accent-400 text-neutral-100' style={{border: '1px solid blue'}}>
+    <section className='cta | text-neutral-100 padding-block-700 bg-accent-400' style={{border: '1px solid blue'}}>
 			<div className='container'>
 				<div className='even-columns'>
 					<div>

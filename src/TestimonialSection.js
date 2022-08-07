@@ -6,7 +6,7 @@ import { testimonialContent } from './content';
 
 const TestimonialSection = () => {
   return (
-    <section className='carousel'>
+    <section className='carousel | padding-block-700'>
 			<h2 className='fs-secondary-heading'>What they've said</h2>
 			<div>
 				<UList

@@ -5,7 +5,7 @@ import UList from './UList';
 
 const MiddleSection = () => {
   return (
-    <section>
+    <section className='padding-block-900'>
 			<div className='container'>
 				<div className='even-columns'>
 					<div>

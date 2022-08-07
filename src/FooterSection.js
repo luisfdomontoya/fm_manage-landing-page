@@ -5,7 +5,7 @@ import UList from './UList';
 
 const FooterSection = () => {
   return (
-    <footer className='bg-neutral-900 text-neutral-100' style={{border: '1px solid blue'}}>
+    <footer className='text-neutral-100 padding-block-700 bg-neutral-900' style={{border: '1px solid blue'}}>
 			<div className='container'>
 				<div className='even-columns' style={{backgroundColor: 'black'}}>
 					<a href="#"><img src={ require('./images/logo.svg').default } alt='Manage logo' /></a>
