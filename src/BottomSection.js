@@ -13,7 +13,7 @@ const BottomSection = () => {
 					</div>
 					<div>
 						<Button
-							className={'button inverted'}
+							className='button'
 							dataType='inverted'
 						>
 							Get Started

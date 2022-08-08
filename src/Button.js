@@ -4,9 +4,10 @@ const Button = (props) => {
   return (
     <button
       className={ props.className }
-      data-type={ props.dataType ? props.dataType : '' }
+      data-type={ props.dataType ? props.dataType : undefined }
+      aria-control={ props.ariaControl ? props.ariaControl : undefined }
     >
-			{ props.children }
+			{ props.children ? props.children : undefined }
 		</button>
   );
 };

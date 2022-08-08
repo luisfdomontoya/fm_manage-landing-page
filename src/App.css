@@ -90,6 +90,19 @@ picture {
 /* the following classes are used to set the font and background
    color of the sections */
 
+/* Hide the word "Menu" on the header navbar */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
 .text-primary-400 {
   color: var(--clr-primary-400)
 }
@@ -211,7 +224,7 @@ body {
   user-select: none;
 }
 
-.button.inverted {
+.button[data-type='inverted'] {
   color: var(--clr-accent-400);
   background-color: var(--clr-neutral-100);
 }
@@ -219,4 +232,44 @@ body {
 .button:hover,
 .button:focus-visible {
   background-color: var(--clr-accent-300);
+}
+
+.button[data-type='inverted']:hover,
+.button[data-type='inverted']:focus-visible {
+  color: var(--clr-accent-300);
+  background-color: var(--clr-neutral-100);
+}
+
+/* Navigation */
+
+.primary-header {
+  margin-top: var(--size-700);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+@media (max-width: 50em) {
+  .primary-navigation {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    border: 0;
+    padding: 0.5em;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .mobile-nav-toggle .icon-close {
+    display: none;
+  }
 }
