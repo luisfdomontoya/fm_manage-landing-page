@@ -2,37 +2,44 @@ const navContent = [
 	{
     id: 1,
     title: 'Pricing',
-    type: 'header'
+    type: 'header',
+    url: '#'
   },
 	{
     id: 2,
     title: 'Product',
-    type: 'header'
+    type: 'header',
+    url: '#'
   },
 	{
     id: 3,
     title: 'About Us',
-    type: 'header'
+    type: 'header',
+    url: '#'
   },
 	{
     id: 4,
     title: 'Careers',
-    type: 'header'
+    type: 'header',
+    url: '#'
   },
 	{
     id: 5,
     title: 'Community',
-    type: 'header'
+    type: 'header',
+    url: '#'
   },
   {
     id: 6,
     title: 'Home',
-    type: 'footer'
+    type: 'footer',
+    url: '#'
   },
   {
     id: 7,
     title: 'Privacy Policy',
-    type: 'footer'
+    type: 'footer',
+    url: '#'
   }
 ];
 
