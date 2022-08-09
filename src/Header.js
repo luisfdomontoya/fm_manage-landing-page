@@ -1,11 +1,19 @@
 // import './App.css';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { navContent } from './content';
 import Button from './Button';
 import UList from './UList';
 
 const Header = () => {
+	let dataVisible=undefined;
+	const [toggle, setToggle] = useState(false);
+
+	const handleToggle = () => {
+		dataVisible=true;
+		setToggle(!toggle);
+	}
+
   return (
     <header className='primary-header'>
       <div className="container">
@@ -18,21 +26,31 @@ const Header = () => {
 					</a>
 					<Button
 						className='mobile-nav-toggle'
-						ariaControl='primary-navigation'
+						ariaControls='primary-navigation'
+						ariaExpanded='false'
+						onClickEvent = { handleToggle }
 					>
-						<img
-							className='icon-hamburger'
-							src={ require('./images/icon-hamburger.svg').default }
-							alt='icon hamburger'
-						/>
-						<img
-							className='icon-close'
-							src={ require('./images/icon-close.svg').default }
-							alt='icon close'
-						/>
+						{ !toggle
+							? (
+								<img
+									className='icon-hamburger'
+									src={ require('./images/icon-hamburger.svg').default }
+									aria-hidden='true'
+									alt='icon hamburger'
+								/>
+							)
+							: (
+								<img
+								className='icon-close'
+								src={ require('./images/icon-close.svg').default }
+								aria-hidden='true'
+								alt='icon close'
+								/>
+							)
+						}
 						<span className='visually-hidden'>Menu</span>
 					</Button>
-					<nav className='primary-navigation'>
+					<nav className='primary-navigation' data-visible>
 						<UList
 							className='nav-list'
 							id='primary-navigation'
